@@ -1,0 +1,80 @@
+.contact {
+    /* background-color: #1c1f28; */
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin: 1.5rem;
+    color: whitesmoke;
+}
+
+.contact-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+    overflow: hidden;
+}
+
+.contact-info, .contact-social {
+    padding: 4rem;
+    background-color: #292c36;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.contact-info ul, .contact-social ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.contact-info li, .contact-social li{
+    margin-bottom: 1rem;
+}
+
+.contact-social a{
+color: #fff;
+}
+
+.contact-social p{
+    padding-bottom: 1rem;
+    color: #37a3b1;
+}
+
+.contact-message {
+    text-align: left;
+}
+
+.contact-message h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-message form {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-message input, .contact-message textarea, .contact-message button {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.green{
+    color: #37a3b1;
+}
+
+.contact-message button {
+    background-color: #3a95a1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}

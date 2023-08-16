@@ -1,0 +1,155 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    color: #fff;
+}
+
+section{
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    z-index: 1000;
+    background-color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding:1rem 0;
+    justify-content: center;
+    border-bottom: 5px solid white;
+    margin-bottom: 2rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    font-size: 25px;
+}
+
+nav ul li a {
+    color: #3a95a1;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #666;
+    font-size: 26px;
+}
+
+/* Resume content styling */
+.resume-content {
+    padding: 6rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    /* margin-top: 5rem; */
+    align-items: flex-start;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.column-divider {
+    width: 2px;
+    background-color: #ccc;
+    height: 100%;
+}
+
+.resume-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #3a95a1;
+}
+
+.resume-content .personal-details {
+    grid-column: 1 / span 2;
+    font-weight: bold;
+    text-align: center;
+}
+
+.resume-content .personal-details p{
+    font-size: 1.5rem;
+}
+
+.resume-content p {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.skills li{
+font-size: 1.3rem;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.projects h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.projects h3:before {
+    content: "\2022"; /* Unicode character for a bullet point */
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.projects .project {
+    padding-left: 1.5rem; /* Indent project content */
+    border-left: 4px solid #3a95a1; /* Add a vertical line to the left of each project */
+}
+
+.projects .project p {
+    margin-bottom: 0.5rem;
+}
+
+/* Add vertical line to the left of each section */
+.section {
+    position: relative;
+    padding-left: 1rem; /* Create space between the line and content */
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px; /* Width of the vertical line */
+    background-color: #3a95a1; /* Color of the line */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #175b64;
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .resume-content {
+        grid-template-columns: 1fr;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}

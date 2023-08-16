@@ -1,0 +1,140 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    transition: color 0.3s ease;
+    /* background-color: #26352c; */
+    background-color:#0b2124;
+    color: white;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    color: #fff;
+    padding: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    /* padding-left: 50px; */
+    margin-left: 180px;
+}
+
+nav ul li {
+    margin: 0rem 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    /* flex: 1; */
+    /* padding-left: 40px; */
+}
+
+nav ul li a {
+    color:white;
+    font-weight: bold;
+    flex: 1;
+    /* font-family: cursive; */
+    text-decoration: none;
+    /* padding-left: 30px;
+    margin: 50px; */
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    color: black;
+    /* font-size: 1.7rem; */
+}
+
+/* Main content styling */
+.main-content {
+    display: flex;
+    /* background-image: linear-gradient(180deg, #1c1f28, rgb(65 115 57)); */
+    justify-content: space-between; 
+    align-items: felx-start;
+    padding: 2rem;
+}
+
+.profile-image {
+    width: 400px;
+    height: 500px;
+    border-radius: 50%;
+    /* margin-right: 3rem;
+    margin-top:  2rem; */
+    margin: 1rem 1rem;
+    transition: transform 0.3s ease;
+}
+
+.profile-section{
+    display: flex;
+    /* background-image: linear-gradient(180deg, #1c1f28, rgb(65 115 57)); */
+}
+
+.intro{
+    flex: 1;
+    text-align: center;
+    color: black;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    text-align:center;
+    margin-top: 120px;
+    margin-bottom:0.5rem;
+    /* font-family: Bricolage Grotesque; */
+}
+
+.intro h2 {
+    text-align:center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    /* font-family: cursive; */
+}
+
+.intro p {
+    text-align:center;
+    font-size: 1.5rem;
+    margin: 2rem 1rem;
+    font-family: ui-rounded;
+}
+
+/* Footer styling */
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 0rem; */
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    /* Adjust layout for screens wider than 768px */
+    .main-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .profile-image {
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
+
+    .intro {
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
